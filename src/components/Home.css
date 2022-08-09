@@ -4,30 +4,30 @@
     align-items: center;
     position: relative;
     top: 40vh;
-    width: auto;
+    width: 100vw;
     height: auto;
-    color: aqua;
+    user-select: none;
 }
 
 #sunset{
     position: absolute;
     scale: 1.5;
     z-index: -2;
-    width: 30%;
+    width: 28%;
 }
 #titre{
     position: absolute;
     scale: 1.5;
     z-index: 0;
-    width: 30%;
+    width: 28%;
 }
 
 .Jacky{
     position: absolute;
     height: 400px;
     z-index: -1;
-    width: 30%;
-    padding-left: 24%;
+    width: 28%;
+    padding-left: 22%;
     padding-top: 8%;
 }
 
