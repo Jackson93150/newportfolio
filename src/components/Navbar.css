@@ -31,3 +31,13 @@ nav {
     color: #ffffff;
     cursor: pointer;
 }
+
+@media screen and (max-width: 420px){
+    nav{
+        width: 330px;
+    }
+    .items{
+        font-size: 18px;
+        margin-right: 25px;
+    }
+}

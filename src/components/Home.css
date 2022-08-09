@@ -122,3 +122,29 @@
         left: -1540px;
     }
 }
+
+@media screen and (max-width: 420px){
+    #title{
+        scale: 0.4;
+        left: 1370px;
+    }
+    #ellipse{
+        scale: 0.25;
+        left: 745px;
+        top: -160px;
+    }
+    #group{
+        scale: 0.55;
+        left: 150px;
+        top: -90px;
+    }
+    #palmier{
+        scale: 0.15;
+        top: -150px;
+        left: -965px;
+    }
+    .Jacky{
+        height: 150px;
+        left: -1563px;
+    }
+}
