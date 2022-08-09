@@ -1,0 +1,33 @@
+@font-face { font-family: Khand; src: url('Khand-Regular.ttf'); } 
+*
+nav {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: center;
+    top: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+}
+
+.navbar-container {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.items {
+    font-family: 'Khand';
+    font-size: 20px;
+    margin-right: 35px;
+    margin-block-start: -5px;
+    color: #ffffff;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+    height: 600px;
+}
+
+#title{
+    position: relative;
+    scale: 1.5;
+    z-index: 0;
+    top: -100px;
+    left: 1350px;
+}
+
+#ellipse{
+    scale: 0.75;
+    z-index: -3;
+    left: 950px;
+    top: -200px;
+    position: relative;
+}
+
+#group{
+    scale: 0.75;
+    z-index: -1;
+    left: 310px;
+    top: -100px;
+    scale: 1;
+    position: relative;
+}
+
+#palmier {
+    scale: 0.5;
+    z-index: -2;
+    left: -870px;
+    top: -270px;
+    position: relative;
+}
+
+.Jacky{
+    height: 450px;
+    display: flex;
+    position: relative;
+    top: -100px;
+    left: -1325px;
+    z-index: -1;
+}
