@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     top: 40vh;
-    width: 100vw;
+    width: 100%;
     height: auto;
     user-select: none;
 }
