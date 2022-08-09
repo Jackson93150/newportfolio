@@ -3,148 +3,102 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 250px;
-    height: 600px;
+    top: 40vh;
+    width: auto;
+    height: auto;
+    color: aqua;
 }
 
 #title{
-    position: relative;
+    position: absolute;
     scale: 1.5;
     z-index: 0;
-    top: -100px;
-    left: 1350px;
+    width: 30%;
+    padding-right: 4%;
 }
 
 #ellipse{
-    scale: 0.75;
-    z-index: -3;
-    left: 950px;
-    top: -200px;
-    position: relative;
+    position: absolute;
+    scale: 0.65;
+    z-index: -4;
+    width: 30%;
+    padding-left: 29%;
+    padding-bottom: 13%;
 }
 
 #group{
-    scale: 0.75;
-    z-index: -1;
-    left: 310px;
-    top: -100px;
+    position: absolute;
     scale: 1;
-    position: relative;
+    z-index: -2;
+    width: 30%;
+    padding-left: 20%;
 }
 
-#palmier {
-    scale: 0.5;
-    z-index: -2;
-    left: -870px;
-    top: -270px;
-    position: relative;
+#palmier{
+    position: absolute;
+    scale: 0.63;
+    z-index: -3;
+    width: 30%;
+    padding-left: 9%;
+    padding-bottom: 21%;
 }
 
 .Jacky{
-    height: 450px;
-    position: relative;
-    top: -100px;
-    left: -1325px;
-    z-index: -1;
+    position: absolute;
+    height: 400px;
+    z-index: -2;
+    width: 30%;
+    padding-left: 21%;
+}
+
+
+@media screen and (max-width: 1920px){
+    #title{
+        width: 45%;
+        padding-right: 4%;
+    }
+    #ellipse{
+        width: 45%;
+        padding-left: 48%;
+        padding-bottom: 18%;
+    }
+    #group{
+        width: 45%;
+        padding-left: 30%;
+    }
+    #palmier{
+        width: 45%;
+        padding-left: 19%;
+        padding-bottom: 28%;
+    }
+    .Jacky{
+        width: 45%;
+        padding-left: 35%;
+    }
 }
 
 @media screen and (max-width: 1200px){
     #title{
-        scale: 1;
+        width: 65%;
+        padding-right: 4%;
     }
     #ellipse{
-        scale: 0.55;
-        left: 860px;
+        width: 65%;
+        padding-left: 70%;
+        padding-bottom: 15%;
     }
     #group{
-        scale: 0.8;
-        left: 220px;
+        width: 65%;
+        padding-left: 40%;
     }
     #palmier{
-        scale: 0.34;
-        top: -210px;
-        left: -920px;
+        width: 65%;
+        padding-left: 30%;
+        padding-bottom: 40%;
     }
     .Jacky{
+        width: 65%;
         height: 300px;
-        left: -1440px;
-    }
-}
-
-@media screen and (max-width: 765px){
-    #title{
-        scale: 0.7;
-        left: 1370px;
-    }
-    #ellipse{
-        scale: 0.4;
-        left: 790px;
-        top: -180px;
-    }
-    #group{
-        scale: 0.7;
-        left: 150px;
-        top: -80px;
-    }
-    #palmier{
-        scale: 0.25;
-        top: -180px;
-        left: -955px;
-    }
-    .Jacky{
-        height: 230px;
-        left: -1515px;
-    }
-}
-
-@media screen and (max-width: 550px){
-    #title{
-        scale: 0.5;
-        left: 1370px;
-    }
-    #ellipse{
-        scale: 0.3;
-        left: 770px;
-        top: -170px;
-    }
-    #group{
-        scale: 0.6;
-        left: 150px;
-        top: -90px;
-    }
-    #palmier{
-        scale: 0.18;
-        top: -160px;
-        left: -955px;
-    }
-    .Jacky{
-        height: 200px;
-        left: -1540px;
-    }
-}
-
-@media screen and (max-width: 420px){
-    #title{
-        scale: 0.4;
-        left: 1370px;
-    }
-    #ellipse{
-        scale: 0.25;
-        left: 745px;
-        top: -160px;
-    }
-    #group{
-        scale: 0.55;
-        left: 150px;
-        top: -90px;
-    }
-    #palmier{
-        scale: 0.15;
-        top: -150px;
-        left: -965px;
-    }
-    .Jacky{
-        height: 150px;
-        left: -1563px;
+        padding-left: 53%;
     }
 }
