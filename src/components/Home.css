@@ -42,9 +42,83 @@
 
 .Jacky{
     height: 450px;
-    display: flex;
     position: relative;
     top: -100px;
     left: -1325px;
     z-index: -1;
+}
+
+@media screen and (max-width: 1200px){
+    #title{
+        scale: 1;
+    }
+    #ellipse{
+        scale: 0.55;
+        left: 860px;
+    }
+    #group{
+        scale: 0.8;
+        left: 220px;
+    }
+    #palmier{
+        scale: 0.34;
+        top: -210px;
+        left: -920px;
+    }
+    .Jacky{
+        height: 300px;
+        left: -1440px;
+    }
+}
+
+@media screen and (max-width: 765px){
+    #title{
+        scale: 0.7;
+        left: 1370px;
+    }
+    #ellipse{
+        scale: 0.4;
+        left: 790px;
+        top: -180px;
+    }
+    #group{
+        scale: 0.7;
+        left: 150px;
+        top: -80px;
+    }
+    #palmier{
+        scale: 0.25;
+        top: -180px;
+        left: -955px;
+    }
+    .Jacky{
+        height: 230px;
+        left: -1515px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #title{
+        scale: 0.5;
+        left: 1370px;
+    }
+    #ellipse{
+        scale: 0.3;
+        left: 770px;
+        top: -170px;
+    }
+    #group{
+        scale: 0.6;
+        left: 150px;
+        top: -90px;
+    }
+    #palmier{
+        scale: 0.18;
+        top: -160px;
+        left: -955px;
+    }
+    .Jacky{
+        height: 200px;
+        left: -1540px;
+    }
 }
