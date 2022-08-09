@@ -9,96 +9,67 @@
     color: aqua;
 }
 
-#title{
+#sunset{
+    position: absolute;
+    scale: 1.5;
+    z-index: -2;
+    width: 30%;
+}
+#titre{
     position: absolute;
     scale: 1.5;
     z-index: 0;
     width: 30%;
-    padding-right: 4%;
-}
-
-#ellipse{
-    position: absolute;
-    scale: 0.65;
-    z-index: -4;
-    width: 30%;
-    padding-left: 29%;
-    padding-bottom: 13%;
-}
-
-#group{
-    position: absolute;
-    scale: 1;
-    z-index: -2;
-    width: 30%;
-    padding-left: 20%;
-}
-
-#palmier{
-    position: absolute;
-    scale: 0.63;
-    z-index: -3;
-    width: 30%;
-    padding-left: 9%;
-    padding-bottom: 21%;
 }
 
 .Jacky{
     position: absolute;
     height: 400px;
-    z-index: -2;
+    z-index: -1;
     width: 30%;
-    padding-left: 21%;
+    padding-left: 24%;
+    padding-top: 8%;
 }
 
-
 @media screen and (max-width: 1920px){
-    #title{
+    #sunset{
         width: 45%;
-        padding-right: 4%;
     }
-    #ellipse{
+    #titre{
         width: 45%;
-        padding-left: 48%;
-        padding-bottom: 18%;
-    }
-    #group{
-        width: 45%;
-        padding-left: 30%;
-    }
-    #palmier{
-        width: 45%;
-        padding-left: 19%;
-        padding-bottom: 28%;
     }
     .Jacky{
         width: 45%;
-        padding-left: 35%;
+        padding-left: 36%;
+        padding-top: 12%;
     }
 }
 
 @media screen and (max-width: 1200px){
-    #title{
+    #sunset{
         width: 65%;
-        padding-right: 4%;
     }
-    #ellipse{
+    #titre{
         width: 65%;
-        padding-left: 70%;
-        padding-bottom: 15%;
-    }
-    #group{
-        width: 65%;
-        padding-left: 40%;
-    }
-    #palmier{
-        width: 65%;
-        padding-left: 30%;
-        padding-bottom: 40%;
     }
     .Jacky{
         width: 65%;
         height: 300px;
         padding-left: 53%;
+        padding-top: 16%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #sunset{
+        width: 90%;
+    }
+    #titre{
+        width: 90%;
+    }
+    .Jacky{
+        width: 90%;
+        height: 150px;
+        padding-left: 48%;
     }
 }

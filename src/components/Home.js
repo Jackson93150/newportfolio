@@ -1,9 +1,7 @@
 import React, {Suspense} from 'react'
 import "./Home.css"
-import title from '../assets/title.png'
-import Ellipse from '../assets/Ellipse.svg'
-import Group from '../assets/Group.svg'
-import palmier from '../assets/palmier.png'
+import sunset from '../assets/sunset.png'
+import titre from '../assets/titre.png'
 import {Canvas} from "@react-three/fiber"
 import Furtif from "../Furtif"
 
@@ -12,10 +10,8 @@ function Home() {
     <div className='home'>
         <div className='container'>
             <div className='Title'>
-              <img src={title} alt='title' id='title'/>
-              <img src={Ellipse} alt='ellipse' id='ellipse'/>
-              <img src={Group} alt='group' id='group'/>
-              <img src={palmier} alt='palmier' id='palmier'/>
+              <img src={sunset} alt='sunset' id='sunset'/>
+              <img src={titre} alt='titre' id='titre'/>
               <div className='Jacky'>
                 <Canvas camera={{zoom:0.7}}>
                     <directionalLight intensity={0.5}/>
