@@ -5,15 +5,13 @@ function Navbar() {
   return (
     <>
         <nav className='navbar'>
-            <ul className='navbar-container'>
-                <li className='items' id='h'>Home</li>
-                <li className='items' id='a'>About Me</li>
-                <li className='items' id='p'>Project</li>
-                <li className='items' id='c'>Contact Me</li>
-            </ul>
+            <a href='#' >Home</a>
+            <a href='#' >About Me</a>
+            <a href='#' >Project</a>
+            <a href='#' >Contact Me</a>
+            <div className='animation start-home'></div>
         </nav>
     </>
   )
 }
-
 export default Navbar

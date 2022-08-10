@@ -1,56 +1,76 @@
 @font-face { font-family: Khand; src: url('Khand-Regular.ttf'); } 
 *
 nav {
+    margin: 30px auto;
+    position: fixed;
+    width: 400px;
     height: 50px;
     background: rgba(255, 255, 255, 0.25);
     color: #fff;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    position: fixed;
-    top: 20px;
-    left: calc(50% - 200px);
+    top: 0px;
     border-radius: 10px;
-    margin: 0 auto;
-    text-align: center;
-    width: 400px;
+    left: calc(50% - 200px);
 }
 
-.navbar-container {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
-
-.items {
+nav a{
+    line-height: 50px;
+    height: 100%;
+    font-size: 17px;
+    font-family: "Khand";
+    display: inline-block;
     position: relative;
-    font-family: 'Khand';
-    font-size: 20px;
-    margin-block-start: -5px;
-    color: #ffffff;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
     cursor: pointer;
 }
 
-#h{
-    position: relative;
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all 0.5s ease 0s;
+    background: #F3A950;
+    border-radius: 10px;
 }
 
-#a{
-    position: relative;
-    left: 30px;
+nav a:nth-child(1){
+    width: 90px;
+}
+nav a:nth-child(2){
+    width: 110px;
+}
+nav a:nth-child(3){
+    width: 90px;
+}
+nav a:nth-child(4){
+    width: 110px;
 }
 
-#p{
-    position: relative;
-    left: 60px;
+.start-home, a:nth-child(1):hover~.animation{
+    width: 90px;
+    left: 0px;
 }
-
-#c{
-    position: relative;
+.start-about,a:nth-child(2):hover~.animation{
+    width: 110px;
     left: 90px;
 }
+.start-project,a:nth-child(3):hover~.animation{
+    width: 90px;
+    left: 200px;
+}
+.start-contact,a:nth-child(4):hover~.animation{
+    width: 110px;
+    left: 290px;
+}
+
+
 
 @media screen and (max-width: 480px){
     nav{
@@ -58,25 +78,36 @@ nav {
         height: 40px;
         left: calc(50% - 135px);
     }
-    .items{
-        font-size: 15px;
-        margin-block-start: -7px;
+    nav a{
+        line-height: 43px;
+        font-size: 14px;
     }
-    #h{
-        left: -20px;
+    nav a:nth-child(1){
+        width: 60px;
     }
-    
-    #a{
+    nav a:nth-child(2){
+        width: 75px;
+    }
+    nav a:nth-child(3){
+        width: 60px;
+    }
+    nav a:nth-child(4){
+        width: 75px;
+    }
+    .start-home, a:nth-child(1):hover~.animation{
+        width: 60px;
         left: 0px;
     }
-    
-    #p{
-        position: relative;
-        left: 20px;
+    .start-about,a:nth-child(2):hover~.animation{
+        width: 75px;
+        left: 60px;
     }
-    
-    #c{
-        position: relative;
-        left: 40px;
+    .start-project,a:nth-child(3):hover~.animation{
+        width: 60px;
+        left: 135px;
+    }
+    .start-contact,a:nth-child(4):hover~.animation{
+        width: 75px;
+        left: 195px;
     }
 }
