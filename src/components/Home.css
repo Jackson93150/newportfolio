@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     top: 40vh;
-    width: 100%;
+    width: 85%;
     height: auto;
     user-select: none;
 }
@@ -14,12 +14,14 @@
     scale: 1.5;
     z-index: -2;
     width: 28%;
+    padding-left: 12%;
 }
 #titre{
     position: absolute;
     scale: 1.5;
     z-index: 0;
     width: 28%;
+    padding-left: 12%;
 }
 
 .Jacky{
@@ -27,7 +29,7 @@
     height: 400px;
     z-index: -1;
     width: 28%;
-    padding-left: 22%;
+    padding-left: 40%;
     padding-top: 8%;
 }
 
@@ -40,7 +42,7 @@
     }
     .Jacky{
         width: 45%;
-        padding-left: 36%;
+        padding-left: 54%;
         padding-top: 12%;
     }
 }
@@ -55,21 +57,21 @@
     .Jacky{
         width: 65%;
         height: 300px;
-        padding-left: 53%;
+        padding-left: 72%;
         padding-top: 16%;
     }
 }
 
 @media screen and (max-width: 480px){
     #sunset{
-        width: 85%;
+        width: 90%;
     }
     #titre{
-        width: 85%;
+        width: 90%;
     }
     .Jacky{
-        width: 85%;
+        width: 90%;
         height: 150px;
-        padding-left: 45%;
+        padding-left: 60%;
     }
 }
