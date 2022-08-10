@@ -62,14 +62,14 @@
 
 @media screen and (max-width: 480px){
     #sunset{
-        width: 90%;
+        width: 85%;
     }
     #titre{
-        width: 90%;
+        width: 85%;
     }
     .Jacky{
-        width: 90%;
+        width: 85%;
         height: 150px;
-        padding-left: 48%;
+        padding-left: 45%;
     }
 }

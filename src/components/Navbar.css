@@ -20,24 +20,61 @@ nav {
     list-style: none;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
 }
 
 .items {
+    position: relative;
     font-family: 'Khand';
     font-size: 20px;
-    margin-right: 35px;
     margin-block-start: -5px;
     color: #ffffff;
     cursor: pointer;
 }
 
-@media screen and (max-width: 420px){
+#h{
+    position: relative;
+}
+
+#a{
+    position: relative;
+    left: 30px;
+}
+
+#p{
+    position: relative;
+    left: 60px;
+}
+
+#c{
+    position: relative;
+    left: 90px;
+}
+
+@media screen and (max-width: 480px){
     nav{
-        width: 330px;
+        width: 270px;
+        height: 40px;
     }
     .items{
-        font-size: 18px;
-        margin-right: 25px;
+        font-size: 15px;
+        margin-block-start: -7px;
+    }
+    #h{
+        left: -20px;
+    }
+    
+    #a{
+        left: 0px;
+    }
+    
+    #p{
+        position: relative;
+        left: 20px;
+    }
+    
+    #c{
+        position: relative;
+        left: 40px;
     }
 }
