@@ -4,6 +4,7 @@ import sunset from '../assets/sunset.png'
 import titre from '../assets/titre.png'
 import {Canvas} from "@react-three/fiber"
 import Furtif from "../Furtif"
+import scroll from "../assets/scroll.gif"
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
                 </Canvas>
               </div>
             </div>
+            <img src={scroll} alt='scroll' id='scroll'/>
         </div>
     </div>
   )

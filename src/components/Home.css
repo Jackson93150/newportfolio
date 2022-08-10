@@ -33,6 +33,15 @@
     padding-top: 8%;
 }
 
+#scroll{
+    position: absolute;
+    scale: 0.4;
+    width: 28%;
+    padding-left: 51%;
+    bottom:-15%;
+    user-select: none;
+}
+
 @media screen and (max-width: 1920px){
     #sunset{
         width: 45%;
@@ -44,6 +53,11 @@
         width: 45%;
         padding-left: 54%;
         padding-top: 12%;
+    }
+    #scroll{
+        width: 35%;
+        padding-left: 45%;
+        bottom:-10%;
     }
 }
 
@@ -60,6 +74,11 @@
         padding-left: 72%;
         padding-top: 16%;
     }
+    #scroll{
+        width: 55%;;
+        padding-left: 30%;
+        bottom: -10%;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -73,5 +92,9 @@
         width: 90%;
         height: 150px;
         padding-left: 60%;
+    }
+    #scroll{
+        width: 40%;
+        bottom: 0%;
     }
 }
