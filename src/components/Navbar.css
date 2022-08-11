@@ -13,6 +13,7 @@ nav {
     top: 0px;
     border-radius: 10px;
     left: calc(50% - 200px);
+    z-index: 5;
 }
 
 nav a{

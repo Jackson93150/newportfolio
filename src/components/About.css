@@ -1,0 +1,58 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+    width: 85%;
+    height: auto;
+    user-select: none;
+}
+
+#ellipse{
+    position: absolute;
+    scale: 1.0;
+    top: 85vh;
+    padding-bottom: 7%;
+    width: 600px;
+    left: calc(50% - 500px);
+}
+
+.JackyDance{
+    position: absolute;
+    height: 1200px;
+    width: 100%;
+    top: 85vh;
+    left: -160px;
+}
+
+@media screen and (max-width: 1920px){
+    #ellipse{
+        padding-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #ellipse{
+        width: 480px;
+        left: calc(59% - 240px);
+        top: 100vh;
+    }
+    .JackyDance{
+        height: 950px;
+        top: 100vh;
+        left: 90px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #ellipse{
+        width: 350px;
+        left: calc(59% - 175px);
+    }
+    .JackyDance{
+        height: 600px;
+        width: 100vw;
+        left: 12%;
+    }
+}

@@ -6,6 +6,7 @@ import { Canvas } from "@react-three/fiber";
 import Furtif from "../Furtif";
 import scroll from "../assets/scroll.gif";
 import { motion } from "framer-motion";
+import About from "./About";
 
 function Home() {
   return (
@@ -34,6 +35,9 @@ function Home() {
           <img src={scroll} alt="scroll" id="scroll" />
         </div>
       </motion.div>
+      <div className="about">
+        <About/>
+      </div>
     </div>
   );
 }
