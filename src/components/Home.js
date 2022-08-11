@@ -35,9 +35,15 @@ function Home() {
           <img src={scroll} alt="scroll" id="scroll" />
         </div>
       </motion.div>
-      <div className="about">
-        <About/>
-      </div>
+      <motion.div
+        initial={{ opacity: 1 }}
+        whileInView={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="about">
+          <About />
+        </div>
+      </motion.div>
     </div>
   );
 }

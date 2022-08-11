@@ -1,3 +1,5 @@
+@font-face { font-family: MontserratLight; src: url('MontserratLight.ttf'); } 
+*
 .box{
     display: flex;
     justify-content: center;
@@ -26,10 +28,19 @@
     left: -160px;
 }
 
-@media screen and (max-width: 1920px){
-    #ellipse{
-        padding-bottom: 20%;
-    }
+.texta{
+    position: absolute;
+    top: 85vh;
+    font-family:"MontserratLight";
+    text-align: justify;
+    color: #FFD3D3;
+    width: 35%;
+    font-size: 30px;
+    left: calc(50% + 200px);
+}
+
+b{
+    color: #F8F6CB;
 }
 
 @media screen and (max-width: 1200px){
@@ -43,6 +54,13 @@
         top: 100vh;
         left: 90px;
     }
+    .texta{
+        top: 152vh;
+        font-size: 20px;
+        left: 12%;
+        width: 95%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -54,5 +72,9 @@
         height: 600px;
         width: 100vw;
         left: 12%;
+    }
+    .texta{
+        font-size: 15px;
+        top: 155vh;
     }
 }
