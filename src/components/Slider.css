@@ -43,11 +43,11 @@
 }
 
 .up {
-    right: -20%;
+    right: 5%;
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 90%;
+    top: 80%;
     background-image: url("../assets/link.png");
     background-size: cover;
 }
