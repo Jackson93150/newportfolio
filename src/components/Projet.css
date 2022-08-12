@@ -34,10 +34,11 @@
     .zawarudo{
         height: 950px;
         padding-left: 10%;
+        top: 2300px;
     }
     .marche{
         height: 950px;
-        top: 1812px;
+        top: 1912px;
         padding-left: 10%;
     }
 }
@@ -47,10 +48,11 @@
         height: 650px;
         padding-left: 10%;
         width: 100vw;
+        top: 2300px;
     }
     .marche{
         height: 650px;
-        top: 1942px;
+        top: 2032px;
         padding-left: 10%;
     }
 }

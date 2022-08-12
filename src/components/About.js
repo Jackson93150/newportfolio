@@ -27,12 +27,12 @@ function About() {
           <p>
             Hi, my name is <b>Jackson </b>
             I'm 21 and I am a <b>Developer </b>
-            and a student at <b>MyDigitalSchool. </b>I am someone who has loved
-            <b> design, art and tech </b>since childhood. That’s why I tried to
+            and a student at <b>MyDigitalSchool.</b><br></br>I am someone who has loved
+            <b> design, art and tech </b>since childhood. <br></br>That’s why I tried to
             study design, but I prefer to do computer science and keep design
-            as a passion. Now I like to practice computer science and I like
+            as a passion. <br></br>Now I like to practice computer science and I like
             even more when I have to incorporate design. My goal is to be an
-            <b> accomplished fullstack developer. </b>I also like to
+            <b> accomplished fullstack developer. </b><br></br>I also like to
             <b> read and watch manga, play video games and go to the gym.</b>
           </p>
         </div>

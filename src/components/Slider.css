@@ -114,7 +114,7 @@ p{
 @media screen and (max-width: 1200px){
     .carousel-wrapper{
         scale: 0.7;
-        top: 2300px;
+        top: 2400px;
         left: calc(50% - 90px);
     }
 }
@@ -124,7 +124,7 @@ p{
         width: 150px;
         height: 150px;
         left: calc(50% - 60px);
-        top: 2270px;
+        top: 2380px;
     }
     .texte{
         width: 100%;
