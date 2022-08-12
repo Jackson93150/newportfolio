@@ -39,5 +39,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.onscroll = function (event) {
+        var body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor = '#FF9393';
+        var scroll = window.pageYOffset;
+        if (scroll < 1900) {
+            // green
+            body.style.backgroundColor = '#FF9393';
+        }else{
+          body.style.backgroundColor = '#140729';
+        }
+      }
+    </script>
   </body>
 </html>

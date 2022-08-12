@@ -7,6 +7,7 @@ import Furtif from "../Furtif";
 import scroll from "../assets/scroll.gif";
 import { motion } from "framer-motion";
 import About from "./About";
+import Projet from "./Projet";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
       >
         <div className="container">
           <div className="Title">
@@ -22,8 +23,8 @@ function Home() {
             <img src={titre} alt="titre" id="titre" />
             <div className="Jacky">
               <Canvas camera={{ zoom: 0.7 }}>
-                <directionalLight intensity={0.5} color={"#ffc9f9"}/>
-                <ambientLight intensity={0.2} color={"#ffc9f9"}/>
+                <directionalLight intensity={0.5} color={"#ffc9f9"} />
+                <ambientLight intensity={0.2} color={"#ffc9f9"} />
                 <pointLight position={[30, 10, 20]} intensity={1} />
                 <Suspense fallback={null}>
                   <Furtif />
@@ -42,6 +43,9 @@ function Home() {
       >
         <div className="about">
           <About />
+        </div>
+        <div className="projet">
+          <Projet />
         </div>
       </motion.div>
     </div>

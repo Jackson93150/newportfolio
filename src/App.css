@@ -2,6 +2,7 @@ body{
     background-color: #FF9393;
     overflow-x: hidden;
     width: 100vw;
+    transition: background 1s ease;
 }
 
 ::-webkit-scrollbar

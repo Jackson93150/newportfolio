@@ -1,0 +1,56 @@
+.Projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+    width: 85%;
+    height: auto;
+    user-select: none;
+}
+
+.zawarudo{
+    position: absolute;
+    height: 1500px;
+    width: 100vw;
+    top: 2200px;
+    z-index: 1;
+    padding-left: 50%;
+}
+
+.marche{
+    position: absolute;
+    height: 1300px;
+    width: 100vw;
+    top: 1690px;
+    padding-left: 50%;
+}
+
+.aquamarine {
+    background-color: #68EDC6;
+}
+
+@media screen and (max-width: 1200px){
+    .zawarudo{
+        height: 950px;
+        padding-left: 10%;
+    }
+    .marche{
+        height: 950px;
+        top: 1812px;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .zawarudo{
+        height: 650px;
+        padding-left: 10%;
+        width: 100vw;
+    }
+    .marche{
+        height: 650px;
+        top: 1942px;
+        padding-left: 10%;
+    }
+}
