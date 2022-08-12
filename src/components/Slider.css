@@ -1,0 +1,144 @@
+@font-face { font-family: MontserratMedium; src: url('MontserratMedium.ttf'); } 
+@font-face { font-family: MontserratLight; src: url('MontserratLight.ttf'); } 
+*
+
+.carousel-wrapper {
+  height: 250px;
+  position: absolute;
+  top: 1900px;
+  width: 250px;
+  left: 25%;
+  display: block;
+  margin: 50px auto;
+  z-index: 2;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.arrow-prev {
+  left: -20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next {
+  right: -20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.up {
+    right: -20%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 90%;
+    background-image: url("../assets/link.png");
+    background-size: cover;
+}
+
+.texte{
+    right: -30%;
+    width: 400px;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    color: #FFD3D3;
+    font-size: 30px;
+}
+h1{
+    font-family: "MontserratMedium";
+    
+}
+p{
+    font-family: "MontserratLight";
+    font-size: 24px;
+}
+
+[id^="item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../assets/slide1.png");
+  background-size: cover;
+}
+
+.item-2 {
+  background: url("../assets/slide1.png");
+  background-size: cover;
+}
+.item-3 {
+  background: url("../assets/slide1.png");
+  background-size: cover;
+}
+.item-4 {
+    background: url("../assets/slide1.png");
+    background-size: cover;
+}
+.item-5 {
+    background: url("../assets/slide1.png");
+    background-size: cover;
+} 
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4,
+#item-5:target ~ .item-5 {
+  z-index: 3;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px){
+    .carousel-wrapper{
+        scale: 0.7;
+        top: 2300px;
+        left: calc(50% - 90px);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .carousel-wrapper{
+        width: 150px;
+        height: 150px;
+        left: calc(50% - 60px);
+        top: 2270px;
+    }
+    .texte{
+        width: 100%;
+        right: 0%;
+    }
+    .texte h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .texte p{
+        font-size: 15px;
+    }
+    .up{
+        width: 25px;
+        height: 25px;
+    }
+}

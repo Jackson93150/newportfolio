@@ -3,7 +3,7 @@ import "./Projet.css";
 import { Canvas } from "@react-three/fiber";
 import Monde from "../Monde";
 import Marche from "../Marche";
-
+import Slide from "./Slider";
 
 function Projet() {
   return (
@@ -29,6 +29,9 @@ function Projet() {
             <Marche position={[0, 0, 0]} />
           </Suspense>
         </Canvas>
+      </div>
+      <div className="slider">
+        <Slide/>
       </div>
     </div>
   );
