@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import "./Home.css";
 import sunset from "../assets/sunset.png";
 import titre from "../assets/titre.png";
@@ -8,8 +8,18 @@ import scroll from "../assets/scroll.gif";
 import { motion } from "framer-motion";
 import About from "./About";
 import Projet from "./Projet";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
 
 function Home() {
+  useEffect(()=> {
+    document.getElementById("github").onclick = function () {
+      window.open("https://github.com/Jackson93150")
+    }
+    document.getElementById("linkedin").onclick = function () {
+      window.open("https://www.linkedin.com/in/jackson-anthonipillai-20a88a227/")
+    }
+  })
   return (
     <div className="home">
       <motion.div
@@ -17,6 +27,10 @@ function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
+        <div className="logo">
+          <img src={github} alt="github" id="github" />
+          <img src={linkedin} alt="linkedin" id="linkedin" />
+        </div>
         <div className="container">
           <div className="Title">
             <img src={sunset} alt="sunset" id="sunset" />
@@ -51,5 +65,7 @@ function Home() {
     </div>
   );
 }
+
+
 
 export default Home;

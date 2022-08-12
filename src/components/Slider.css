@@ -81,19 +81,19 @@ p{
 }
 
 .item-2 {
-  background: url("../assets/slide1.png");
+  background: url("../assets/slide2.png");
   background-size: cover;
 }
 .item-3 {
-  background: url("../assets/slide1.png");
+  background: url("../assets/slide3.png");
   background-size: cover;
 }
 .item-4 {
-    background: url("../assets/slide1.png");
+    background: url("../assets/slide4.png");
     background-size: cover;
 }
 .item-5 {
-    background: url("../assets/slide1.png");
+    background: url("../assets/slide5.png");
     background-size: cover;
 } 
 
