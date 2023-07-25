@@ -1,0 +1,135 @@
+.parcours {
+  width: 100%;
+  height: fit-content;
+  background-color: #070017;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume p {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  z-index: 999;
+}
+
+.graphique {
+  padding: 50px;
+  width: 1100px;
+  height: fit-content;
+}
+
+.graphique #parcours {
+  width: 100%;
+  user-select: none;
+}
+
+.responsive-graph {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+  .resume p {
+    display: block;
+  }
+  .graphique {
+    padding: 20px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+    .graphique {
+      display: none;
+    }
+    .responsive-graph{
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        display: flex;
+        height: 500px;
+        padding: 20px;
+        width: 70%;
+    }
+    .responsive-graph .line{
+        height: 100%;
+        width: 5px;
+        margin-left: 20%;
+        background-color: white;
+    }
+
+    .responsive-graph #pinkdot{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: 19%;
+    }
+
+    .responsive-graph .school-1{
+        color: white;
+        position: absolute;
+        left: 35%;
+    }
+
+    .responsive-graph .degre-1{
+        color: white;
+        position: absolute;
+        left: -5%;
+        top: 20%;
+    }
+
+    .responsive-graph #pinkdot2{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: 19%;
+        top: 40%;
+    }
+    .responsive-graph .school-2{
+        color: white;
+        position: absolute;
+        left: 35%;
+        top: 40%;
+    }
+
+    .responsive-graph .degre-2{
+        color: white;
+        position: absolute;
+        left: -5%;
+        top: 60%;
+    }
+
+    .responsive-graph .school-3{
+        color: white;
+        position: absolute;
+        left: 35%;
+        top: 80%;
+    }
+
+    .responsive-graph .degre-3{
+        color: white;
+        position: absolute;
+        left: 12%;
+        top: 95%;
+    }
+
+    .responsive-graph #greendot{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: 19%;
+        top: 80%;
+    }
+  }
+  
