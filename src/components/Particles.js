@@ -4,7 +4,8 @@ function ParticleAnimation() {
   const canvasRef = useRef(null);
   const particleCount = 500;
   const particleSize = 1;
-  const particleSpeedRange = { min: 0.02, max: 0.05 };
+  const particleSpeedMin = 0.02;
+  const particleSpeedMax = 0.05;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -22,8 +23,8 @@ function ParticleAnimation() {
         y: Math.random() * canvas.height,
         size: Math.random() * particleSize + 0.1,
         speed:
-          Math.random() * (particleSpeedRange.max - particleSpeedRange.min) +
-          particleSpeedRange.min,
+          Math.random() * (particleSpeedMax - particleSpeedMin) +
+          particleSpeedMin,
         angle: Math.random() * 360,
       };
       return particle;
