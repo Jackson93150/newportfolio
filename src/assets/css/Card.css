@@ -9,6 +9,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
   filter: brightness(90%) contrast(95%) grayscale(50%);
 }
 

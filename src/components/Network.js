@@ -4,7 +4,8 @@ const NetworkParticles = () => {
   const canvasRef = useRef(null);
   let particleCount = 300;
   const particleSize = 2;
-  const particleSpeedRange = { min: 0.1, max: 0.3 };
+  const particleSpeedmin = 0.1;
+  const particleSpeedmax = 0.3;
   const connectionDistance = 100;
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
   let particles = [];
@@ -45,11 +46,11 @@ const NetworkParticles = () => {
         const x = Math.random() * width;
         const y = Math.random() * height;
         const vx =
-          Math.random() * (particleSpeedRange.max - particleSpeedRange.min) +
-          particleSpeedRange.min;
+          Math.random() * (particleSpeedmax - particleSpeedmin) +
+          particleSpeedmin;
         const vy =
-          Math.random() * (particleSpeedRange.max - particleSpeedRange.min) +
-          particleSpeedRange.min;
+          Math.random() * (particleSpeedmax - particleSpeedmin) +
+          particleSpeedmin;
 
         particles.push({ x, y, vx, vy });
       }
