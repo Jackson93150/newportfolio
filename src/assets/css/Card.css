@@ -1,0 +1,27 @@
+.card {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card #cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(90%) contrast(95%) grayscale(50%);
+}
+
+.card #cover:hover {
+  filter: brightness(105%) ;
+  transform: scale(1.1);
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card h3 {
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.Intro {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  overflow: hidden;
+  background: linear-gradient(#000000, #131126);
+  margin: 0;
+}
+
+.zawarudo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  top: 50%;
+}
+
+.marche {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 14%;
+  z-index: 0;
+}
+
+.welcomeText {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 40%;
+  height: fit-content;
+  z-index: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.welcomeText h1 {
+  font-size: 6.7vw;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.2)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.welcomeText p {
+  font-size: 24px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.4)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 999;
+}
+
+@media (min-width: 1100px) {
+  .zawarudo {
+    padding-left: 15%;
+  }
+  .marche {
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .welcomeText {
+    top: 5%;
+    width: 80%;
+    height: 95%;
+  }
+  .welcomeText h1 {
+    font-size: 13.5vw;
+  }
+  .welcomeText p {
+    display: none;
+  }
+}

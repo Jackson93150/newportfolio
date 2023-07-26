@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import "../assets/css/Home.css";
-import Projet from "./Projet";
+import Intro from "./Intro";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import Parcours from "./Parcours";
+import Projet from "./Projet";
 
 function Home() {
   useEffect(() => {
@@ -22,8 +23,9 @@ function Home() {
         <img src={github} alt="github" id="github" />
         <img src={linkedin} alt="linkedin" id="linkedin" />
       </div>
-      <Projet />
+      <Intro />
       <Parcours />
+      <Projet />
     </div>
   );
 }

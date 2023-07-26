@@ -3,11 +3,13 @@ import "../assets/css/Parcours.css";
 import parcours from "../assets/parcours.png";
 import greendot from "../assets/greendot.png";
 import pinkdot from "../assets/pinkdot.png";
+import texture from "../assets/texture.jpg";
 
 
 function Parcours() {
   return (
     <div className="parcours">
+      <img src={texture} alt="texture" id="texture" />
       <div className="resume">
         <p>
           Je m'appelle Jackson et j'ai 22 ans. Je suis un développeur junior et

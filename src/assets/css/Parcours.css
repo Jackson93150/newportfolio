@@ -1,4 +1,5 @@
 .parcours {
+  position: relative;
   width: 100%;
   height: fit-content;
   background-color: #070017;
@@ -7,6 +8,17 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
+}
+
+#texture{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  mix-blend-mode:overlay;
 }
 
 .resume {
@@ -39,6 +51,8 @@
 .responsive-graph {
     display: none;
 }
+
+
 
 @media (max-width: 1100px) {
   .resume p {
