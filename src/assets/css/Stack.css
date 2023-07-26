@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 1vw;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 767px) {
