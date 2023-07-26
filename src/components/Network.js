@@ -8,12 +8,11 @@ const NetworkParticles = () => {
   const particleSpeedmax = 0.3;
   const connectionDistance = 100;
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
-  let particles = [];
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
-
+    const particles = [];
     const { width, height } = canvasSize;
 
     canvas.width = width;
@@ -36,7 +35,6 @@ const NetworkParticles = () => {
 
     function initializeParticles() {
       const { width, height } = canvas;
-      particles = [];
 
       for (let i = 0; i < particleCount; i++) {
         const x = Math.random() * width;
