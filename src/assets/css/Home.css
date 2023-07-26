@@ -1,7 +1,7 @@
 .logo {
   position: absolute;
   display: flex;
-  width: 100%;
+  width: 50vw;
   z-index: 999;
   padding: 10px;
 }

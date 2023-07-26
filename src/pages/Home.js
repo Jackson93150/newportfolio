@@ -5,6 +5,7 @@ import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import Parcours from "./Parcours";
 import Projet from "./Projet";
+import Stack from "./Stack";
 
 function Home() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function Home() {
       <Intro />
       <Parcours />
       <Projet />
+      <Stack />
     </div>
   );
 }
