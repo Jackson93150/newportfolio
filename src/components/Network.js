@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 
 const NetworkParticles = () => {
   const canvasRef = useRef(null);
-  let particleCount = 300;
+  const particleCount = 180;
   const particleSize = 2;
   const particleSpeedmin = 0.1;
   const particleSpeedmax = 0.3;
@@ -18,10 +18,6 @@ const NetworkParticles = () => {
 
     canvas.width = width;
     canvas.height = height;
-
-    if (width <= 767) {
-      particleCount = 100;
-    }
 
     initializeParticles();
 
@@ -117,9 +113,6 @@ const NetworkParticles = () => {
       const width = parentDiv.clientWidth;
       const height = parentDiv.clientHeight;
       setCanvasSize({ width, height });
-      if (width <= 767) {
-        particleCount = 100;
-      }
     };
 
     handleResize();
