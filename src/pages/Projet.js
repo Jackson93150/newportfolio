@@ -5,6 +5,8 @@ import "swiper/css";
 import Card from "../components/swiperCard";
 import { projectData } from "../constants/projectData";
 import NetworkParticles from "../components/Network";
+import Stack from "./Stack";
+import Contact from "./Contact";
 
 function Projet() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -73,6 +75,8 @@ function Projet() {
           ? projectData[lastHoveredIndex].description
           : projectData[0].description}
       </p>
+      <Stack />
+      <Contact />
     </div>
   );
 }

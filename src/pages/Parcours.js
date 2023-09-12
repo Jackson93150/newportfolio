@@ -32,7 +32,7 @@ function Parcours() {
         <img src={greendot} alt="greendot" id="greendot" />
         <h2 className="school-1">Lycée Eugénie Cotton</h2>
         <h2 className="school-2">Université Paris VIII</h2>
-        <h2 className="school-3">MyDigitalSchool</h2>
+        <h2 className="school-3">SupDeVinci</h2>
         <h3 className="degre-1">BAC</h3>
         <h3 className="degre-2">BAC + 3</h3>
         <h3 className="degre-3">MASTER</h3>

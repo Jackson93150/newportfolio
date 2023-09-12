@@ -4,7 +4,7 @@ function ParticleAnimation() {
   const canvasRef = useRef(null);
   const particleCount = 500;
   const particleSize = 1;
-  const particleSpeedMin = 0.03;
+  const particleSpeedMin = 0.05;
   const particleSpeedMax = 0.08;
 
   useEffect(() => {

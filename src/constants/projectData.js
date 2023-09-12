@@ -9,7 +9,7 @@ export const projectData = [
     {
         name: 'Trichrome',
         link: Trichrome,
-        description: `J'ai eu l'occasion de créer un site web pour l'agence Trichrome pendant ma période d'alternance. Ce projet consistait en la conception d'un site front-end créatif utilisant les technologies Vue.js et Strapi`
+        description: `J'ai eu l'occasion de créer un site web pour l'agence Trichrome durant mon alternance. Ce projet consistait en la conception d'un site front-end créatif utilisant les technologies Vue.js et Strapi`
     },
     {
         name: 'Food Analytics',

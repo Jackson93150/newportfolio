@@ -34,7 +34,7 @@ function Intro() {
         <h1>Hello World</h1>
         <p>
           Je m'appelle Jackson et j'ai 22 ans. Je suis un développeur junior et
-          étudiant à MyDigitalSchool. Depuis mon enfance, je suis passionné par
+          étudiant à SupDeVinci. Depuis mon enfance, je suis passionné par
           le design, l'art et la technologie. C'est pourquoi j'ai essayé
           d'étudier le design, mais j'ai finalement préféré m'orienter vers
           l'informatique, car cela me plaisait beaucoup plus. Mon objectif est

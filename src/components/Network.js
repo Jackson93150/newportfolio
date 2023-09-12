@@ -2,11 +2,11 @@ import React, { useRef, useEffect, useState } from "react";
 
 const NetworkParticles = () => {
   const canvasRef = useRef(null);
-  const particleCount = 180;
+  const particleCount = 150;
   const particleSize = 2;
   const particleSpeedmin = 0.1;
   const particleSpeedmax = 0.3;
-  const connectionDistance = 100;
+  const connectionDistance = 150;
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
@@ -21,10 +21,10 @@ const NetworkParticles = () => {
     initializeParticles();
 
     const animate = () => {
+      requestAnimationFrame(animate);
       updateParticles();
       drawParticles(context);
       connectParticles(context);
-      requestAnimationFrame(animate);
     };
 
     animate();
